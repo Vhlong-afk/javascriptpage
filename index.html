@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>Image Preview</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" >
 </head>
 <body>
   <h2>Hover over an image below to display here.</h2>
@@ -14,9 +14,15 @@
   </div>
 
   <div class="preview">
-    <img src="flower.jpg" alt="a flower" onmouseover="upDate(this)" onmouseout="undo()" />
-    <img src="sunflower.jpg" alt="a sunflower" onmouseover="upDate(this)" onmouseout="undo()" />
-    <img src="rose.jpg" alt="a rose" onmouseover="upDate(this)" onmouseout="undo()" />
+    <img src="flower.jpg" alt="a flower" onmouseover="upDate(this)" onmouseout="undo()" onfocus="upDate(this)" 
+     onblur="undo()" 
+     tabindex="0" >
+    <img src="sunflower.jpg" alt="a sunflower" onmouseover="upDate(this)" onmouseout="undo()" onfocus="upDate(this)" 
+     onblur="undo()" 
+     tabindex="0">
+    <img src="rose.jpg" alt="a rose" onmouseover="upDate(this)" onmouseout="undo()" onfocus="upDate(this)" 
+     onblur="undo()" 
+     tabindex="0">
   </div>
 
   <script src="script.js"></script>
